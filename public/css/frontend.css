@@ -19920,3 +19920,5 @@ Booking Popup Modal Area CSS
 }
 /* .heroSlider .row > *:first-child{padding-bottom: 80px;} */
 
+.course-slider .swiper-wrapper .swiper-slide{height: auto;}
+

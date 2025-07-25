@@ -56,7 +56,7 @@ export default function Success() {
                                         <h1>Thank y<span><FontAwesomeIcon icon={faThumbsUp} className="bounceIcon" /></span>u !</h1>
                                         <h4>Awesome! Your registration is complete.</h4>
                                         <p>
-                                            While our Customer Success team will reach out to you over email/phone.
+                                            Now you can download your files by clicking below.
                                         </p>
 
                                         <Link href={`http://localhost:3000/download?token=${token}&email=${email}`} className="btn default-btn">

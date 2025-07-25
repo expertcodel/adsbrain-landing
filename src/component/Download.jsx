@@ -82,11 +82,17 @@ function Download({ download_url, email, downloadDetail }) {
                                 <div className="wrapper-1">
                                     <div className="wrapper-2">
                                         <h1>Downl<span><FontAwesomeIcon icon={faThumbsUp} className="bounceIcon" /></span>ad</h1>
-                                        <h4>{completed === -1 || completed === 0 ? "Here is your download url." : "You have downloaded all"}</h4>
+                                        <h4>
+                                            {
+                                                completed === -1 || completed === 0 ? 
+                                                "Here is your download url." : 
+                                                "You already downloaded this files"
+                                            }
+                                        </h4>
                                         {/* <p>
                                                 Here is your downloads url
                                             </p> */}
-                                        <table>
+                                        <table className='table table-bordered'>
                                             <thead>
                                                 <tr>
                                                     <th>Sr. No.</th>

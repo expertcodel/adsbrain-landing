@@ -5,14 +5,14 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faAnglesRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function ThumbnailCourseCarousel({ courselist }) {
   return (
     <Swiper
       modules={[Autoplay, FreeMode]}
       autoplay={{
-        delay: 3000,
+        delay: 30000000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true
       }}
@@ -47,7 +47,7 @@ export default function ThumbnailCourseCarousel({ courselist }) {
               </p>
 
               <Link href={`/checkout/${course.slug}`} className="default-btn w-100">
-                Buy Now
+                Buy Now <FontAwesomeIcon icon={faAngleRight} />
                 <span />
               </Link>
             </div>
